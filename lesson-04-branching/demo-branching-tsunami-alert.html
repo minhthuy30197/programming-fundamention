@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src='../lesson-03-functions/assert.js'></script>
+</head>
+<body>
+<script>
+  assertEquals(determine(60, 200), 'RED', 'Cảnh báo RED');
+  assertEquals(determine(45, 89), 'RED', 'Cảnh báo RED');
+  assertEquals(determine(48, 163), 'CAM', 'Cảnh báo CAM');
+  assertEquals(determine(48, 250), '', 'Không cảnh báo');
+
+  function determine(speed, distance) {
+    if (distance <= 100) return 'RED';
+    else if (speed > 50 && distance <= 200) return 'RED';
+    else if (distance <= 200) return 'CAM';
+    else return '';
+  }
+</script>
+</body>
+</html>
