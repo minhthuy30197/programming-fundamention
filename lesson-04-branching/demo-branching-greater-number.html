@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <meta charset='UTF-8'>
-  <title>Demo Branching - Greater Number</title>
-  <script src='../lesson-03-functions/assert.js'></script>
-  <script>
-    // your scripts here
+    <meta charset='UTF-8'>
+    <title>Demo Branching - Greater Number</title>
+    <script src='../lesson-03-functions/assert.js'></script>
+    <script>
+      function greaterNum(num1, num2) {
+        if (num1 > num2) return num1;
+        else return num2;
+      }
 
-  </script>
+    </script>
 </head>
 <body>
-  <script>
-    testThatOneIsGreaterThanZero()
-    testThatOneHundredIsGreaterThanNinetyNine()
+<script>
+  testThatOneIsGreaterThanZero();
+  testThatOneHundredIsGreaterThanNinetyNine();
 
-    function testThatOneIsGreaterThanZero () {
-      assertEquals(greaterNum(1, 0), 1, '1 is greater than 0')
-      assertEquals(greaterNum(0, 1), 1, '1 is greater than 0')
-    }
+  function testThatOneIsGreaterThanZero() {
+    assertEquals(greaterNum(1, 0), 1, '1 is greater than 0');
+    assertEquals(greaterNum(0, 1), 1, '1 is greater than 0');
+  }
 
-    function testThatOneHundredIsGreaterThanNinetyNine () {
-      assertEquals(greaterNum(100, 99), 100, '100 is greater than 99')
-      assertEquals(greaterNum(99, 100), 100, '100 is greater than 99')
-    }
+  function testThatOneHundredIsGreaterThanNinetyNine() {
+    assertEquals(greaterNum(100, 99), 100, '100 is greater than 99');
+    assertEquals(greaterNum(99, 100), 100, '100 is greater than 99');
+  }
 
-  </script>
+</script>
 </body>
 </html>
