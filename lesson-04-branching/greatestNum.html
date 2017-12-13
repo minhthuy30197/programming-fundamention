@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So lon nhat</title>
+    <script src='greaterNum.js'></script>
+</head>
+<body>
+<script>
+    greatestNum(1,21,-9);
+
+    function greatestNum(num1, num2, num3) {
+      let tmp = greaterNum(num1, num2);
+      let result = greaterNum(tmp, num3);
+      console.log('So lon nhat trong ba so la '+result)
+    }
+</script>
+</body>
+</html>
