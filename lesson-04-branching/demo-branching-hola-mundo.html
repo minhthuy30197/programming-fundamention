@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <meta charset='UTF-8'>
-  <title>Demo Branching - Greeting in Multi Langueges</title>
-  <script src='../lesson-03-functions/assert.js'></script>
-  <script>
-    // your scripts here
-    function greeting () {
-      
-    }
-  </script>
+    <meta charset='UTF-8'>
+    <title>Demo Branching - Greeting in Multi Langueges</title>
+    <script src='../lesson-03-functions/assert.js'></script>
+    <script>
+      // your scripts here
+      function greeting(language) {
+        switch (language) {
+          case 'en':
+            return 'Hello World!';
+            break;
+          case 'es':
+            return 'Hola Mundo!';
+            break;
+          case 'il':
+            return '!שלום עולם';
+            break;
+          case 'se':
+            return 'Hej världen!';
+            break;
+        }
+      }
+    </script>
 </head>
 <body>
-  <script>
-    testGreetingInEnglish()
-    testGreetingInSpanish()
-    testGreetingInHebrew()
-    testGreetingInSwedish()
+<script>
+  testGreetingInEnglish();
+  testGreetingInSpanish();
+  testGreetingInHebrew();
+  testGreetingInSwedish();
 
-    function testGreetingInEnglish () {
-      assertEquals(greeting('en'), 'Hello World!', 'greeting by English')
-    }
+  function testGreetingInEnglish() {
+    assertEquals(greeting('en'), 'Hello World!', 'greeting by English');
+  }
 
-    function testGreetingInSpanish () {
-      assertEquals(greeting('es'), 'Hola Mundo!', 'greeting by Spanish')
-    }
+  function testGreetingInSpanish() {
+    assertEquals(greeting('es'), 'Hola Mundo!', 'greeting by Spanish');
+  }
 
-    function testGreetingInHebrew () {
-      assertEquals(greeting('il'), '!שלום עולם', 'greeting by Hebrew')
-    }
+  function testGreetingInHebrew() {
+    assertEquals(greeting('il'), '!שלום עולם', 'greeting by Hebrew');
+  }
 
-    function testGreetingInSwedish () {
-      assertEquals(greeting('se'), 'Hej världen!', 'greeting by Swedish')
-    }
+  function testGreetingInSwedish() {
+    assertEquals(greeting('se'), 'Hej världen!', 'greeting by Swedish');
+  }
 
-  </script>
+</script>
 </body>
 </html>
