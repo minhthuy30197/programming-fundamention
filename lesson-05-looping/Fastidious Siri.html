@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fastidious Siri</title>
+</head>
+<body>
+<script>
+  let name = '';
+  let password = '';
+  let count = 0;
+  do {
+    name = prompt('What is your name?');
+    password = prompt('Let type your password here.');
+    count++;
+  } while ((name != 'minhthuy' || password != '123456789') && count < 5);
+  if (count == 5) alert('Go away!');
+  else alert('Welcome my master!');
+</script>
+</body>
+</html>
