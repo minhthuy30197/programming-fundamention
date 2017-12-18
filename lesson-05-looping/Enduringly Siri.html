@@ -9,10 +9,22 @@
   let name = '';
   let password = '';
   do {
-    name = prompt('What is your name?');
-    password = prompt('Let type your password here.');
-  } while (name != 'minhthuy' || password != '123456789');
+    askName();
+    askPassword();
+  } while (checkInfo());
   alert('Welcome my master!');
+
+  function askName() {
+    name = prompt('What is your name?');
+  }
+
+  function askPassword() {
+    password = prompt('Let type your password here.');
+  }
+
+  function checkInfo() {
+    return (name != 'minhthuy' || password != '123456789');
+  }
 </script>
 </body>
 </html>
