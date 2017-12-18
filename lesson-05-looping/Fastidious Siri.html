@@ -10,12 +10,24 @@
   let password = '';
   let count = 0;
   do {
-    name = prompt('What is your name?');
-    password = prompt('Let type your password here.');
+    askName();
+    askPassword();
     count++;
-  } while ((name != 'minhthuy' || password != '123456789') && count < 5);
-  if (count == 5) alert('Go away!');
+  } while (checkInfo() && count < 3);
+  if (count == 3) alert('Go away!');
   else alert('Welcome my master!');
+
+  function askName() {
+    name = prompt('What is your name?');
+  }
+
+  function askPassword() {
+    password = prompt('Let type your password here.');
+  }
+
+  function checkInfo() {
+    return (name != 'minhthuy' || password != '123456789');
+  }
 </script>
 </body>
 </html>
