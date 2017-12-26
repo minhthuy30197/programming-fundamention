@@ -31,7 +31,7 @@ function drawEmptyRectangle(numDot, numRow) {
       }
       rs = rs + '\n';
     }
-    else rs = rs + drawRectangle(numDot,1);
+    else rs = rs + drawRectangle(numDot, 1);
     countRow++;
   }
   return rs;

@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <title>Rectangle Drawing Test</title>
   <script src="rectangle.js" type="application/javascript"></script>
-  <script src="../lesson-03-functions/assert.js" type="application/javascript"></script>
+  <script src="../libs/assert.js" type="application/javascript"></script>
 </head>
 <body>
 <script !src="">
+  'use strict'
+
   assertEquals(drawEmptyRectangle(1, 1), '*\n', 'draw a dot')
 
   assertEquals(drawEmptyRectangle(10, 1), '**********\n', 'draw ten dots')

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Line Segment Test Test</title>
+  <script src="../libs/line-segment.js" type="application/javascript"></script>
+  <script src="../libs/assert.js" type="application/javascript"></script>
+</head>
+<body>
+<script>
+  'use strict'
+  let rectangle = '';
+  let height = 8;
+  let count = 0;
+  while (count < height) {
+    let seg;
+    if (count != 0 && count != height -1) {
+      seg = createLineSegment(20, '__');
+    } else {
+      seg = createLineSegment(20, '*_')
+    }
+    rectangle += seg.print();
+    count++;
+  }
+  document.write(rectangle);
+</script>
+</body>
+</html>
