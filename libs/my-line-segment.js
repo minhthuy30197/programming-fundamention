@@ -1,4 +1,9 @@
 'use strict'
-function createLine() {
-  return {};
+function createLine(len) {
+  return {
+    lenght:len,
+    print: function() {
+      
+    }
+  };
 }
