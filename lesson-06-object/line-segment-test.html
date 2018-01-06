@@ -15,9 +15,9 @@
   while (count < height) {
     let seg;
     if (count != 0 && count != height -1) {
-      seg = createLineSegment(20, '__');
+      seg = createLineSegment(20, '_');
     } else {
-      seg = createLineSegment(20, '*_');
+      seg = createLineSegment(20, '*');
     }
     rectangle += seg.print();
     count++;
