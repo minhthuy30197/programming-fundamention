@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../libs/my-line-segment.js" type="application/javascript"></script>
+</head>
+<body>
+<script>
+    let countRow = 5;
+    let draw = '';
+    while (countRow > 0) {
+      draw += createLine(10).print();
+      draw += '\n';
+      countRow--;
+    }
+    console.log(draw);
+</script>
+</body>
+</html>
