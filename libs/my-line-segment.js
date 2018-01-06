@@ -1,4 +1,4 @@
 'use strict'
 function createLine() {
-  return 0;
+  return {};
 }
