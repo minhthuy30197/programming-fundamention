@@ -8,7 +8,6 @@ let prefixes = {
 function assertEquals(actual, expected, message ) {
   let result = expected === actual
   console.log(renderTestResult(result, message))
-
 }
 
 function assertNotEquals(actual, expected, message ) {
