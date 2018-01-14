@@ -8,7 +8,9 @@ function list() {
     },
     pop: function() {
       this.length--;
-      return this[this.length];
+      let tmp = this[this.length];
+      this[this.length] = undefined;
+      return tmp;
     }
   }
 }
