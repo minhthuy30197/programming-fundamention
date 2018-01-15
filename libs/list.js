@@ -11,6 +11,28 @@ function list () {
       let tmp = this[this.length]
       this[this.length] = undefined
       return tmp
+    },
+    indexOf: function (obj) {
+      let count = 0
+      while (count < this.length) {
+        if (this[count] === obj) return count
+        count++
+      }
+      return -1
+    },
+    concat: function (array) {
+      let tmp = list()
+      let count = 0
+      while (count < this.length) {
+        tmp.push(this[count])
+        count++
+      }
+      count = 0
+      while (count < array.length) {
+        tmp.push(array[count])
+        count++
+      }
+      return tmp
     }
   }
 }
