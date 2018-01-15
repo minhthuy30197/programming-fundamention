@@ -33,6 +33,16 @@ function list () {
         count++
       }
       return tmp
+    },
+    shift: function () {
+      let tmp = this[0]
+      this.length--
+      let count = 0
+      while (count < this.length) {
+        this[count] = this[count+1]
+        count++
+      }
+      return tmp
     }
   }
 }
