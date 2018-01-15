@@ -1,14 +1,15 @@
 'use strict'
 function createLine(len) {
   return {
-    lenght:len,
+    length:len,
     print: function() {
       let rs = '';
-      let tmp = this.lenght;
+      let tmp = this.length;
       while (tmp > 0) {
         rs += '*';
         tmp--;
       }
+      rs += '<br>';
       return rs;
     }
   };
