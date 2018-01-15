@@ -151,6 +151,21 @@
 
   })
 
+  QUnit.test('test indexOf function', function (assertThat) {
+    let l = list()
+
+    let first = magicOne()
+    let second = magicOne()
+    let third = magicOne()
+
+    l.push(first)
+    l.push(second)
+
+    assertThat.equal(0, l.indexOf(first), 'indexOf obj first')
+    assertThat.equal(1, l.indexOf(second), 'indexOf obj second')
+    assertThat.equal(-1, l.indexOf(third), 'no exist')
+  })
+
 </script>
 </body>
 </html>
