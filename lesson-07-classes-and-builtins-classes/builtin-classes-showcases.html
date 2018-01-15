@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <meta charset='UTF-8'>
-  <title>Built-in Classes Showcases</title>
+    <meta charset='UTF-8'>
+    <title>Built-in Classes Showcases</title>
+    <script type="application/javascript" src="../libs/list.js"></script>
+    <script type="application/javascript" src="../libs/my-line-segment.js"></script>
 </head>
 <body>
 <script>
   'use strict'
-
+  let myList = list()
+  let count = 10
+  while (count > 0) {
+    myList.push(createLine(count))
+    count--;
+  }
+  count = 0
+  while (count < myList.length) {
+    document.write(myList[count].print())
+    count++
+  }
 </script>
 </body>
 </html>
